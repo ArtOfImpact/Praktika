@@ -1,0 +1,158 @@
+@font-face { 
+    font-family: 'Web font'; 
+    src: url('/Domashka4/Hind/HindSiliguri-Bold.ttf');
+    src: url('/Domashka4/Hind/HindSiliguri-Light.ttf');
+    src: url('/Domashka4/Hind/HindSiliguri-Medium.ttf');
+    src: url('/Domashka4/Hind/HindSiliguri-Regular.ttf');
+    src: url('/Domashka4/Hind/HindSiliguri-SemiBold.ttf');
+}
+
+.conteiner{
+    width: 100%;
+    max-width: 2500px;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+}
+.conteiner__discounts{
+    width: 1400px;
+    height: 334px;
+    display: flex;
+    justify-content:space-between;
+}
+.image{
+    width: 650px;
+    height: 296px;
+    background: linear-gradient(257.26deg, #008BF0 -13.2%, #D943C9 130.95%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image__text{
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #F4F9FC;
+    padding-left: 30px;
+}
+.image__text_subtitle{
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+.image__text_Benefits{
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.image__text_link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+}
+.image{
+    width: 650px;
+    height: 296px;
+    background: linear-gradient(257.26deg, #008BF0 -13.2%, #D943C9 130.95%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image__text{
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #F4F9FC;
+    
+    padding-left: 30px;
+}
+.image__text_subtitle{
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+.image__text_Benefits{
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.image__text_link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+
+
+.conteiner___photo{
+    width: 1300px;
+    display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.photo__about{
+    font-family: 'Hind Siliguri', sans-serif;
+    width: 458px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+}
+.photo__about_product{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #C72535;
+    opacity: 0.6;
+    margin-bottom: 0px;
+}
+.photo__about_title{
+font-weight: 600;
+font-size: 44px;
+line-height: 71px;
+color: black;
+margin-top: 0px;
+}
+.photo__about_privilege{
+    font-size: 16px;
+    line-height: 24px;
+    color: #030D15;
+    opacity: 0.6;
+}
+.photo__about_privilege{
+    font-size: 16px;
+    line-height: 24px;
+    color: #030D15;
+    opacity: 0.6;
+}
+.photo__about_list{
+    height: 250px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 27px;
+    color: black;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+li{
+    padding-bottom: 15px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+li:before {
+    content:"";
+    margin-right: 15px;
+    background-image:url(galochka.svg);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
