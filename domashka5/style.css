@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(/domashka5/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+    src: url(/domashka5/Raleway/Raleway-VariableFont_wght.ttf)
+}
+@font-face {
+    font-family: 'Open_Sans';
+    src: url(/domashka5/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+    src: url(/domashka5/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+.conteiner{
+width: 100%;
+max-width: 2000px;
+height: 1026px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+
+}
+
+.title{
+    font-size: 36px;
+    line-height: 42px;
+    width: 1170px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.seporator{
+    width: 170px;
+    border: 1px solid #EC7979;
+}
+
+.subtitle{
+    font-size: 18px;
+    line-height: 22px;
+    width: 1170px;
+    display: flex;
+    justify-content: center;
+    color: #86878B;
+    font-family: 'Raleway', sans-serif;
+}
+
+.salse{
+    width: 1170px;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+.salse__small{
+    width: 370px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.salse__maedium{
+    width: 370px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+}
+.salse__big{
+    width: 370px;
+    height: 510px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    width: 370px;
+    height: 50px;
+    background-color: white;
+    color: #86878B;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    border: 2px solid #F5F5F5
+}
+.shedow{    
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333333;
+    color: white;
+    border: 2px solid #F5F5F5
+}
+a{
+    width: 370px;
+    height: 100px;
+    font-size: 36px;
+    line-height: 42px;
+    background: #333333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F5F5F5;
+    text-decoration: none;
+}
+.salse_Basic{
+    font-family: 'Open Sans', sans-serif;
+    width: 370px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 32px;
+    background: #333333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F5F5F5
+}
+.salse_Optima{
+    font-family: 'Open Sans', sans-serif;
+    width: 370px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 32px;
+    background: #333333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F5F5F5
+}
+.salse_Pro{   
+    font-family: 'Open Sans', sans-serif;
+    width: 370px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 32px;
+    background: #333333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F5F5F5
+}
