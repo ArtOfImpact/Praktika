@@ -1,0 +1,105 @@
+@font-face {
+    font-family:"Raleway" ;
+    src: url(Raleway/static/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(Open_Sans/static/OpenSans/OpenSans-Bold.ttf);
+}
+.conteiner{
+    width: 100%;
+    max-width: 2000px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.title{
+    font-family:"Raleway";
+    width: 1170px;
+    height: 150px;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seporator{
+    width: 170px;
+    border: 1px solid #EC7979;
+}
+.subtitle{
+    color: #86878B;
+    font-family:"Raleway";
+    width: 1170px;
+    height: 22px;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    flex-basis: 100px;
+}
+
+.feedback{
+    width: 1170px;
+    display: flex;
+    justify-content:space-between;
+
+}
+.text{
+    width: 370px;
+    height: 336px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+span{width: 370px;
+height: 105px;
+text-align: center;
+}
+.text__description{
+    font-family:"Raleway";
+    width: 370px;
+    height: 180px;
+    font-size: 18px;
+    line-height: 22px;
+    color:#86878B ;
+    background-color: #E2E2E2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.polygon{width: 0px; 
+    height:0px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #E2E2E2;
+    margin-left: 70px;
+    margin-bottom: 35px;
+}
+.avatar{
+    width: 370px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.name{
+    font-family: "Open Sans";
+    font-size: 24px;
+    line-height: 32px;
+    width: 269px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post{
+    font-family:"Raleway";
+    font-size: 18px;
+    line-height: 22px;
+    width: 270px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+}
