@@ -1,20 +1,19 @@
 @font-face { 
-    font-family: 'Web font'; 
-    src: url('./Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf');                                    /* IE9 Compat Modes */ 
-    src: url('./Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
-    src: url('./Raleway/Raleway-Italic-VariableFont_wght.ttf');                 
-    src: url('./Raleway/Raleway-VariableFont_wght.ttf'); 
-    font-weight: normal; 
-    font-style: normal;
+    font-family: 'Open_Sans'; 
+    src: url(Fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);}
+@font-face {
+    font-family: "Open_Sans_Bold";
+    src: url(Fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf);
+}                                    /* IE9 Compat Modes */ 
+@font-face {
+    font-family: "Raleway";
+    src: url(Fonts/Raleway/static/Raleway-Regular.ttf);
 }
 
-html {
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+body{
+    margin: 0px;
 }
+
 header{
     background-color: black;
     display: flex;
@@ -27,14 +26,13 @@ header{
     align-items: center;
 }
 .menu{
-    width: 575px;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open_Sans_Bold";
 }
-
+.menu__link{
+padding-right: 40px;
+}
 .conteiner{
-    background: url(fon.jpg)  no-repeat center center fixed;
+    background: url(img/fon.jpg)  no-repeat center center fixed;
     background-size: cover;
     width: 100%;
     max-width: 2000px;
@@ -49,7 +47,7 @@ h1,h5{
     font-family: 'Raleway', sans-serif;
 }
 h4{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open_Sans', sans-serif;
 }
 .content{
     width: 670px;
@@ -130,12 +128,14 @@ align-items: center;
     border-bottom: 0px;
 }
 .interaction__input-field{
+    border: 1px solid #BDBDBD;
+    color: black;
     width: 370px;
     height: 30px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
-    opacity:0.3;
+    outline: none;
 }
 footer{
     background-color:  #F8EFEF;
@@ -163,12 +163,14 @@ footer{
     flex-direction: column;
 }
 .icon{
-width: 700px;
 font-size: 70px;
 color:  #CCCCCC;
 display: flex;
 align-items: center;
-justify-content: space-around;
+}
+.fab{
+    padding-right: 40px;
+
 }
 .box{
     width: 100%;
@@ -250,19 +252,24 @@ justify-content: space-around;
 .info__input-field{
 width: 572px;
 height: 30px;
-color: #BDBDBD;
-opacity:0.3;
+color: black;
+border: 1px solid #BDBDBD;
 border-top: 0px;
 border-left: 0px;
 border-right: 0px;
+outline: none;
+font-family: "Open_Sans_Bold";
 }
 .info__additional-information{
+    border: 1px solid #BDBDBD;
+    color: black;
     width: 570px;
     height: 215px;
-    opacity:0.3;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
+    outline: none;
+    font-family: "Open_Sans_Bold";
 }
 .contact__button{
     display: flex;
@@ -281,20 +288,21 @@ border-right: 0px;
 }
 .additional-footer{
     background-color: black;
+    height: 200px;
 }
-.additional-footer__body{
+.additional-footer__aside{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
-.body__icon{
+.aside__icons{
+    padding-top: 40px;
     color: #CCCCCC;;
     font-size: 70px;
-    display: flex;
-    justify-content: space-around;
-    width: 800px;
 }
-.body__text{
+.aside__text{
+    padding-top: 20px;
     color: #CCCCCC;;
     opacity: 0.5;
     font-size: 18px;
