@@ -9,7 +9,7 @@
     src: url(/domashka5/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
-.conteiner{
+.section{
 width: 100%;
 max-width: 2000px;
 height: 1026px;
@@ -20,7 +20,7 @@ justify-content: space-around;
 
 }
 
-.title{
+.section__title{
     font-size: 36px;
     line-height: 42px;
     width: 1170px;
@@ -29,12 +29,12 @@ justify-content: space-around;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
-.seporator{
+.section__seporator{
     width: 170px;
     border: 1px solid #EC7979;
 }
 
-.subtitle{
+.section__subtitle{
     font-size: 18px;
     line-height: 22px;
     width: 1170px;
@@ -44,7 +44,7 @@ justify-content: space-around;
     font-family: 'Raleway', sans-serif;
 }
 
-.salse{
+.section__box{
     width: 1170px;
     height: 550px;
     display: flex;
@@ -52,14 +52,14 @@ justify-content: space-around;
     align-items: center;
     font-family: 'Raleway', sans-serif;
 }
-.salse__small{
+.box__start{
     width: 370px;
     height: 510px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.salse__maedium{
+.box__middle{
     width: 370px;
     height: 510px;
     display: flex;
@@ -68,14 +68,14 @@ justify-content: space-around;
     margin-bottom: 40px;
     filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
 }
-.salse__big{
+.box__end{
     width: 370px;
     height: 510px; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-p{
+.size{
     width: 370px;
     height: 50px;
     background-color: white;
@@ -88,7 +88,10 @@ p{
     margin: 0px;
     border: 2px solid #F5F5F5
 }
-.shedow{    
+.size_dark{   
+    width: 370px;
+    height: 50px;
+    margin: 0; 
     font-size: 18px;
     line-height: 22px;
     display: flex;
@@ -98,7 +101,7 @@ p{
     color: white;
     border: 2px solid #F5F5F5
 }
-a{
+.price{
     width: 370px;
     height: 100px;
     font-size: 36px;
@@ -111,33 +114,8 @@ a{
     border: 2px solid #F5F5F5;
     text-decoration: none;
 }
-.salse_Basic{
-    font-family: 'Open Sans', sans-serif;
-    width: 370px;
-    height: 60px;
-    font-size: 24px;
-    line-height: 32px;
-    background: #333333;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #F5F5F5
-}
-.salse_Optima{
-    font-family: 'Open Sans', sans-serif;
-    width: 370px;
-    height: 60px;
-    font-size: 24px;
-    line-height: 32px;
-    background: #333333;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #F5F5F5
-}
-.salse_Pro{   
+.name{
+    margin: 0;
     font-family: 'Open Sans', sans-serif;
     width: 370px;
     height: 60px;
