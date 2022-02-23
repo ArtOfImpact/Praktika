@@ -6,7 +6,7 @@
     font-family: "Open Sans";
     src: url(Open_Sans/static/OpenSans/OpenSans-Bold.ttf);
 }
-.conteiner{
+.feedback{
     width: 100%;
     max-width: 2000px;
     height: 700px;
@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: space-around;
 }
-.title{
+.feedback__title{
     font-family:"Raleway";
     width: 1170px;
     height: 150px;
@@ -25,11 +25,11 @@
     align-items: center;
     justify-content: center;
 }
-.seporator{
+.feedback__seporator{
     width: 170px;
     border: 1px solid #EC7979;
 }
-.subtitle{
+.feedback__subtitle{
     color: #86878B;
     font-family:"Raleway";
     width: 1170px;
@@ -41,16 +41,15 @@
     flex-basis: 100px;
 }
 
-.feedback{
+.feedback__col{
     width: 1170px;
     display: flex;
     justify-content:space-between;
 
 }
-.text{
+.col__text{
     width: 370px;
     height: 336px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -71,7 +70,7 @@ text-align: center;
     display: flex;
     align-items: center;
 }
-.polygon{width: 0px; 
+.text__polygon{width: 0px; 
     height:0px;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
@@ -79,7 +78,7 @@ text-align: center;
     margin-left: 70px;
     margin-bottom: 35px;
 }
-.avatar{
+.text__avatar{
     width: 370px;
     display: flex;
     flex-wrap: wrap;
