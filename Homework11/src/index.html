@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.scss">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
             <a href="#" class="logo">
                 <img src="./img/logo1.svg">
             </a>
-            <div class="mobile-menu">
+            <div class="menu-logo">
                 <a href="#"><img src="img/Vector.svg"></a>
             </div>
             <div class="menu"> 
@@ -27,67 +28,74 @@
             </div>
         </div>
     </header>
+<div class="conteiner-background">
     <div class="conteiner">
-        <div class="content">
-            <a href="#" class="content__logo">
-            <img src="img/logo.svg">
-            </a>
-            <h1 class="content__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
-            <hr class="content__separator">
-            <h5 class="content__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-            <button class="content__download"><a  href="#">Download</a></button>
+            <div class="content">
+                <a href="#" class="content__logo"><img src="img/logo.svg"></a>
+                <h1 class="content__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                <hr class="content__separator">
+                <h5 class="content__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                <button class="content__button"><a  href="#">Download</a></button>
+            </div>
+            <div class="registration">
+                <h4 class="registration__subtitle">TRY YOUR <span class="danger">FREE</span> TRIAl TODAY</h4>
+                <div class="registration__input-field">
+                    <input  type="text" name="username" placeholder="Name">
+                </div>
+                <div class="registration__input-field">
+                    <input  type="text" name="username" placeholder="Email">   
+                </div>
+                <div class="registration__input-field">
+                    <input  type="text" name="username" placeholder="Password">
+                </div>
+                <input class="registration__submit" type="submit" value="Get Started">
+            </div>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <div class="text">
+            <p class="text__title">Social Media</p>
+            <p class="text__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Aenean euismod bibendum laoreet.</p>
         </div>
-        <div class="interaction">
-            <h4 class="interaction__subtitle">TRY YOUR <span class="color">FREE</span> TRIAl TODAY</h4>
-            <input class="interaction__input-field" type="text" name="username" placeholder="Name">
-            <input class="interaction__input-field" type="text" name="username" placeholder="Email">   
-            <input class="interaction__input-field" type="text" name="username" placeholder="Password">
-            <input class="interaction__submit" type="submit" value="Get Started">
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-github"></i>
+            <i class="fas fa-rss"></i>
         </div>
     </div>
-    <footer>
-        <div class="footer">
-            <div class="text">
-                <p class="text__title">Social Media</p>
-                <p class="text__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Aenean euismod bibendum laoreet.</p>
-            </div>
-            <div class="icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-pinterest"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-github"></i>
-                <i class="fas fa-rss"></i>
-            </div>
+</footer>
+<div class="features">
+    <p class="features__title">WHY THIS IS AWESOME</p>
+    <hr class="features__separator">
+    <p class="features__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="features__advantage advantage">
+        <div class="advantage__col">
+            <img class="advantage__col-img" src="./img/about_icon_1.svg">
+            <p class="advantage__col-title">Thoughtful Design</p>
+            <p class="advantage__col-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
         </div>
-    </footer>
-    <div class="features">
-        <p class="features__title">WHY THIS IS AWESOME</p>
-        <hr class="features__separator">
-        <p class="features__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <div class="features__advantage advantage">
-            <div class="advantage__col-one">
-                <img class="advantage__col_img" src="./img/about_icon_1.svg">
-                <p class="advantage__col_title">Thoughtful Design</p>
-                <p class="advantage__col_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
-            </div>
-            <div class="advantage__col-two">
-                <img class="advantage__col_img" src="./img/about_icon_2.svg">
-                <p class="advantage__col_title">Thoughtful Design</p>
-                <p class="advantage__col_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
-            </div>
-            <div class="advantage__col-three">
-                <img class="advantage__col_img" src="./img/about_icon_3.svg">
-                <p class="advantage__col_title">Thoughtful Design</p>
-                <p class="advantage__col_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
-            </div>
+        <div class="advantage__col">
+            <img class="advantage__col-img" src="./img/about_icon_2.svg">
+            <p class="advantage__col-title">Thoughtful Design</p>
+            <p class="advantage__col-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+        </div>
+        <div class="advantage__col advantage__col_covering">
+            <img class="advantage__col-img" src="./img/about_icon_3.svg">
+            <p class="advantage__col-title">Thoughtful Design</p>
+            <p class="advantage__col-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
         </div>
     </div>
+</div>
+<div class="wrapper"> 
     <div class="section">
         <div class="section__title">
             <h2 >PRICING OPTIONS</h2>
@@ -97,7 +105,7 @@
             <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
         </div>
         <div class="section__col col">
-            <div class="col__start">
+            <div class="col">
                 <p class="name">Basic</p>
                 <a class="price" href="#">$10</a>
                 <p class="size_dark">Free for life</p>
@@ -108,7 +116,7 @@
                 <p class="size">1 gb of space</p>
                 <p class="size">1 gb of space</p>
             </div>
-            <div class="col__middle">
+            <div class="col">
                 <p class="name">Optima</p>
                 <a class="price" href="#">$20</a>
                 <p class="size_dark">Free for life</p>
@@ -119,7 +127,7 @@
                 <p class="size">1 gb of space</p>
                 <p class="size">1 gb of space</p>
             </div>
-            <div class="col__end">
+            <div class="col">
                 <p class="name">Pro</p>
                 <a class="price" href="#">$30</a>
                 <p class="size_dark"> Free for life</p>
@@ -132,27 +140,28 @@
             </div>
         </div>
     </div>
-    <div class="feedbeck">
-        <div class="title">
-            WHAT OUR CUSTOMERS ARE SAYING
-        </div>
-        <hr class="seporator">
-        <div class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </div>
+</div>    
+<div class="feedbeck">
+    <div class="title">
+        WHAT OUR CUSTOMERS ARE SAYING
+    </div>
+    <hr class="seporator">
+    <div class="subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
     <div class="image-slider swiper">
         <div class="image-slider__wrapper swiper-wrapper">
             <div class="image-slider__slide swiper-slide">
                 <div class="image-slider__image">
-                    <div class="text__description">
+                    <div class="description">
                         <span>Lorem ipsum dolor sit amet,<br> 
                         consectetur adipisicing elit. Doloribus<br> 
                         accusamus expedita repellat similique<br> 
                         odio aspernatur ex, architecto eaque <br>
                         quo suscipit.</span>
                     </div>
-                    <div class="text__polygon"></div>
-                    <div class="text__avatar"> 
+                    <div class="polygon"></div>
+                    <div class="avatar"> 
                         <img src="./img/man.svg" alt="avatar">
                         <div class="name">Davis Rhiel Madsen</div>
                         <div class="post">Manager</div>
@@ -161,7 +170,7 @@
             </div>
             <div class="image-slider__slide swiper-slide">
                 <div class="image-slider__image">
-                    <div class="text__description">
+                    <div class="description">
                         <span>
                         Lorem ipsum dolor sit amet, <br>
                         consectetur adipisicing elit. Doloribus <br>
@@ -170,8 +179,8 @@
                         quo suscipit.
                         </span>
                     </div>
-                    <div class="text__polygon"></div>
-                    <div class="text__avatar"> 
+                    <div class="polygon"></div>
+                    <div class="avatar"> 
                         <img src="./img/man2.svg" alt="avatar">
                         <div class="name">Jaydon Rosser</div>
                         <div class="post">Manager</div>
@@ -180,15 +189,15 @@
             </div>
             <div class="image-slider__slide swiper-slide">
                 <div class="image-slider__image">
-                    <div class="text__description">
+                    <div class="description">
                         <span>Lorem ipsum dolor sit amet, <br>
                         consectetur adipisicing elit. Doloribus <br>
                         accusamus expedita repellat similique <br>
                         odio aspernatur ex, architecto eaque <br>
                         quo suscipit.</span>
                     </div>
-                    <div class="text__polygon"></div>
-                    <div class="text__avatar"> 
+                    <div class="polygon"></div>
+                    <div class="avatar"> 
                         <img src="./img/man3.svg" alt="avatar">
                         <div class="name">Cooper Dorwart</div>
                         <div class="post">Manager</div>
@@ -200,38 +209,47 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-pagination"></div>
     </div>
-    </div>    
+</div>  
+<div class="box-background">
     <div class="box">
-        <div class="middl">
-            <p class="middl__title">STYLISH AXURE DESIGN</p>
-            <hr class="middl__separator">
-            <p class="middl__subtitle">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
-            <button class="middl__button">
-                <a href="#"> Download</a>
-                <span class="bg"></span>
-            </button>
+        <div class="box-content">
+            <div class="middl">
+                <p class="middl__title">STYLISH AXURE DESIGN</p>
+                <hr class="middl__separator">
+                <p class="middl__subtitle">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+                <button class="middl__button"><a href="#"> Download</a></button>
+            </div>
         </div>
     </div>
+</div>
+<div class="contact-background">
     <div class="contact">
         <div class="contact__info info">
             <p class="info__title">CONTACT US</p>
             <hr class="info__separator">
             <p class="info__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="contact__message message">
-            <div class="message__info info">
-                <input class="info__input-field" type="text" name="username" placeholder="Name">
-                <input class="info__input-field" type="text" name="username" placeholder="Email">   
-                <input class="info__input-field" type="text" name="username" placeholder="Password">
+        <div class="form-row form">
+            <div class="container-input">
+                <div class="form__input">
+                    <input  type="text" name="username" placeholder="Name">
+                </div>
+                <div class="form__input">
+                    <input  type="text" name="username" placeholder="Email">
+                </div>
+                <div class="form__input">
+                    <input  type="text" name="username" placeholder="Password">
+                </div>
             </div>
-            <div class="message__additional">
-                <textarea class="info__additional-information" placeholder="Message"></textarea>
+            <div class="container-message">
+                <textarea class="form__massage" placeholder="Message"></textarea>
             </div>
         </div>
         <div class="contact__button button">
-                <input class="button__send" type="submit" placeholder="Send Message" value="Send Message">
+            <input class="button__send" type="submit" placeholder="Send Message" value="Send Message">
         </div>
     </div>
+</div>
     <footer class="additional-footer">
         <div class="additional-footer__aside aside">
             <div class="aside__icons">
