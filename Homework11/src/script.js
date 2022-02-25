@@ -1,4 +1,8 @@
-
+$(document).ready(function(){
+    $('.menu-logo').click(function(event){
+        $('.menu-logo,.menu').toggleClass('active');
+    });
+});
 
 
 new Swiper('.image-slider',{
