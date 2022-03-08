@@ -1,8 +1,8 @@
 "use strict";
 
 //  let user;
-//  let userName="Вася";
-//  user=userName;
+//  let userName = "Вася";
+//  user = userName;
 //  console.log(user);
 
 /*Task 1 💻
@@ -11,9 +11,9 @@
 
 Решение */
 
-//   let x = 20
-//   let y = 58
-//   let z = 42
+//   const x = 20
+//   const y = 58
+//   const z = 42
 //   console.log(x + y + z)
 
 /*  #### Task 2 💻
@@ -29,12 +29,12 @@
 
 Решение*/
 
-//   let sec=60;
-//   let min=60;
-//   let hour=24;
-//   let year=365;
-//   let age=prompt('Сколько тебе лет ? ');
-//   let myAgeInSeconds=age*year*hour*min*sec;
+//   const secondsInMinutes = 60;
+//   const minutesInHour = 60;
+//   const hourInDays = 24;
+//   const daysInYear = 365;
+//   let age = prompt('Сколько тебе лет ? ');
+//   let myAgeInSeconds = age * daysInYear * hourInDays * minutesInHour * secondsInMinutes;
 //   alert(`Твой возраст в секундах ${myAgeInSeconds}`);
 //   console.log(myAgeInSeconds);
 
@@ -44,13 +44,13 @@
 
 Решение*/
 
-//    let userAge='25' * '42';
+//    let userAge = '25' * '42';
 //    let count = 42;
 //    let userName = '42';
-//    let city='minsk'+42;
+//    let city = 'minsk'+ 42;
 //    count=String(count);
 //    console.log(typeof count);
-//    userName=Number(userName);
+//    userName = Number(userName);
 //    console.log(typeof userName);
 //    console.log(typeof userAge);
 //    console.log(typeof city);
@@ -68,10 +68,10 @@
 
 Решение*/
 
-//   let a = 1;
-//   let b = '2';
-//   let c = "белых медведей";
-//   console.log(a+b+c);
+//   const a = 1;
+//   const b = '2';
+//   const c = "белых медведей";
+//   console.log(a + b + c);
 
 /*#### Task 5 💻
 
@@ -85,13 +85,13 @@
 
     Решение*/
 
-//  let доступ;
-//  let морпех;
-//  let наледь;
-//  let попрек;
-//  let рубило;
-//  let lengthWords=6*5;
-//  console.log(lengthWords);
+//  const a = 'доступ';
+//  const b = 'морпех';
+//  const c = 'наледь';
+//  const d = 'попрек';
+//  const e = 'рубило';
+//  const wordLength = (a + b + c + d + e).length;
+//  console.log(wordLength);
 
 /*#### Task 6 💻
     
@@ -101,9 +101,9 @@
 
 Решение*/
 
-//  const dog='Variable: %variable name% have type: %type variable%';
-//  var man='Variable: %variable name% have type: %type variable%';
-//  let cat='Variable: %variable name% have type: %type variable%';
+//  const dog = 'Variable: %variable name% have type: %type variable%';
+//  var man = 'Variable: %variable name% have type: %type variable%';
+//  let cat = 'Variable: %variable name% have type: %type variable%';
 //  console.log(dog);
 //  console.log(cat);
 //  console.log(man);
@@ -114,8 +114,8 @@
 
 Решение*/
 
-//  let userName=prompt('Как тебя зовут?');
-//  let userAge=prompt('Сколько тебе лет ?');
+//  let userName = prompt('Как тебя зовут?');
+//  let userAge = prompt('Сколько тебе лет ?');
 //  console.log(userName);
 //  console.log(userAge);
 
@@ -133,7 +133,7 @@
 
 //    let a = 4;
 //    let b = 3;
-//    [a,b]=[b,a];
+//    [a,b] = [b,a];
 //    console.log(a);
 
 /* #### Task 2 👨‍🏫 
@@ -156,24 +156,24 @@
 //    let codeWord2 = "неужели";
 //    let codeWord3 = "огурцы";
 //    let codeWord4 = "липкие";
-//   let codeWord5 = "?!";
-//    let cipher='беги!';
+//    let codeWord5 = "?!";
+//    let cipher = 'беги!';
 
 /*Дополнительные задачи 
 Задание 1 */
 
-//      let user=prompt('Сколько часов вы занималсись ?');
-//      let water= Math.floor(user * 0.5);
+//      let user = prompt('Сколько часов вы занималсись ?');
+//      let water = Math.floor(user * 0.5);
 //      console.log(typeof water)
 //      alert(`Ты должен выпить ${water}  литров воды !`);
 
 /*Задание 2*/
 
-//      let numberOfYears=prompt('Какой сейчас год ?');         /*Узнаю год */
-//      let calculation=Math.ceil(numberOfYears/100);           /*Узнаю век*/
-//      let typeOfYear=Math.round(numberOfYears / 4);           /*Узнаю тип с округлением */
-//      let type=numberOfYears / 4;                             /*Узнаю тип без округления */    
-//      if(typeOfYear==type){
+//      let numberOfYears = prompt('Какой сейчас год ?');         /*Узнаю год */
+//      let calculation = Math.ceil(numberOfYears/100);           /*Узнаю век*/
+//      let typeOfYear = Math.round(numberOfYears / 4);           /*Узнаю тип с округлением */
+//      let type = numberOfYears / 4;                             /*Узнаю тип без округления */    
+//      if(typeOfYear == type){
 //          alert("Это высокостный год :)");
 //      }else{
 //          alert("Это не высокостный год :(");
