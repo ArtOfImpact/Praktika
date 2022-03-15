@@ -173,7 +173,7 @@
 //      let calculation = Math.ceil(numberOfYears / 100);           /*Узнаю век*/
 //      let typeOfYear = Math.round(numberOfYears / 4);           /*Узнаю тип с округлением */
 //      let type = numberOfYears / 4;                             /*Узнаю тип без округления */    
-//      if (typeOfYear == type){
+//      if (typeOfYear === type){
 //          alert("Это высокостный год :)");
 //      } else{
 //          alert("Это не высокостный год :(");
