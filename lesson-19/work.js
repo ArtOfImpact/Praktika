@@ -32,7 +32,7 @@
 // const student = { 
 //   name: 'John', 
 //   age: 19, 
-//   isHappy:'true' 
+//   isHappy: 'true' 
 // } 
 // for (let room in student) { 
 //   console.log(room) 
