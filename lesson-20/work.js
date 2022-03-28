@@ -143,10 +143,7 @@
 //         alert('Это не полиндром');
 //     }
 // }
-// alert(check());
-
-// Не могу понять почему выдает 2 окна alert !!!!!!!
-
+// console.log(check());
 
 // #### Task 2 👨‍🏫
 
@@ -168,17 +165,17 @@
         //     [9092, 22, 45, 90000],
         // ]
 
-        // let a = matrix.join('');
-        // console.log(a)
-        // let sum = 0;
-        // for(var i = 0; i < a.length; i++){
-        //     sum = a[i];
-        //     // let allSum = sum /  ;
-        //     console.log(sum)
-        // }
-
-        // Сделал из многомерного массива обычный но тогда считает каждую цифур отдельно из-за length.
-        //  А если посчитать в многомерном массиве то одни строки надо делить на 4 а другие на 5 , непонятно как отдельно тогда указать какую строку на сколько делить  
+//        let sum = 0;
+//        let contNumb = 0;
+//        for ( let i = 0; i < matrix.length; i += 1) {
+//            for ( let j = 0; j < matrix [i].length; j += 1){
+//                sum += matrix[i][j];
+//                contNumb += 1;
+//                console.log(i, j, sum, contNumb);
+//            }
+//        }
+//        console.log(sum / contNumb);
+       
 // #### Task 3 👨‍🏫
 
 // Дан массив:
@@ -191,18 +188,18 @@
 
 // const mixedNumbers = [ 24, -89, 43, 0 , -1, 412, 4]
 
-// var a = [];
+// let a = [];
 // let b = [];
-// for (let number in mixedNumbers) {
-//     if (mixedNumbers[number] > 0) {
-//         console.log(mixedNumbers)
-//     a = mixedNumbers[number].concat()
-//     console.log(mixedNumbers[number]);
+// for (let number of mixedNumbers) {
+//     if (number > 0){
+//         a.push(number)
+//     } else if (number < 0){
+//         b.push(number)
+//     }
 // }
-// }
-    
-    //хотел сделать если > 0 то в один массив или если меньше в другой. Но с length не работает и пишет что нет такой функции contact
-// console.log(a);
+// console.log(a)
+// console.log(b)
+   
 
 // #### Task 4 👨‍🏫
 
