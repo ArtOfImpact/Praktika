@@ -6,7 +6,7 @@
 
 // function sumOfNumbers(a){
 //     let sum = 0;
-//     for (let i = 0;i < a; i += 1){
+//     for (let i = 0; i <= a; i += 1){
 //         sum += i;
 //     }
 //     return sum;
@@ -24,7 +24,7 @@
 // > Мы пишем функцию для хорошего банка, поэтому сумма кредита не увеличивается.
 
 
-// function calcOverpayment (a){
+// function calcOverpayment (a) {
 //     let annualRate = 0.17;
 //     let numberOfYears = 5;
 //     let col = a * annualRate * numberOfYears;
@@ -43,7 +43,7 @@
 
 // Решение 
 
-// function showText(text = 'Машина',a = 2,b = 4){
+// function showText(text = 'Машина', a = 2, b = 4){
 //     let str = text.substring(a,b)
 //     return str;
 // }
@@ -56,7 +56,7 @@
 // function calc (a){
 //     let figures =  "" + a;
 //     let sum = 0;
-//     for(i = 0;i < figures.length;i += 1){
+//     for (i = 0; i < figures.length; i += 1) {
 //         sum += +figures[i];
 //     }
 //     return sum;
@@ -78,7 +78,7 @@
 
 //      Решение
 
-// function calcGap (a = 1,b = 1){
+// function calcGap (a,b){
 //     let sum = 0;
 //     while(a <= b){       
 //         sum += a;  
@@ -107,10 +107,10 @@
 //         boo()
 //     }
 //     function foo(){
-//         console.log(foo)
+//         console.log('foo')
 //     }
 //     function boo(){
-//         console.log(boo)
+//         console.log('boo')
 //     }
 // }
 // console.log(fooboo(-2))
