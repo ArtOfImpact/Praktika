@@ -1,5 +1,6 @@
 
 
+
 const root = document.getElementById('root')
 
 // ----------------- Action Panel -----------------
@@ -62,32 +63,33 @@ continerTodo.classList.add('cotainer__Todo')
 continerTodo.setAttribute('id', 'Container')
 
 // ----------------- Todos -----------------
-
-function getTodo(text) {
+function getTodo(todoObject, index, todos) {
   const todoElement = document.createElement('div')
-  todoElement.classList.add('todo-item')
+  todoElement.classList.add('todo-item', (todoObject.isChecked ? 'complete' : undefined))
+  todoElement.setAttribute('id', `todo-${todoObject.id}`)
+  // todoElement.setAttribute('data-index', `${index}`)
 
   const completeButton = document.createElement('button')
   completeButton.classList.add('btn-todo-action')
-  completeButton.innerText = ''
+  completeButton.innerText = todoObject.isChecked ? '✓' : ''
   completeButton.addEventListener('click', () => {
-    completeButton.innerText = completeButton.innerText === '' ? 'v' : ''
+    todoObject.isChecked = !todoObject.isChecked;
+    completeButton.innerText = todoObject.isChecked ? '✓' : ''
+    todoElement.classList.toggle('complete');
   })
-  const cla = () => {
-    if (todoElement.classList.contains('complete')) {
-      todoElement.classList.remove('complete')
-    } else {
-      todoElement.classList.add('complete');
-    }
-  }
-  completeButton.addEventListener('click', cla)
+  //-----------------Completed-------------------
   const compl = () => {
-    const todoItems = document.querySelectorAll('.complete')
-    console.log(todoItems)
-    for (i = 0; i <= todoItems.length; i++) {
-      completed.innerHTML = `<span>Completed:${i}</span>`
-    }
+    completed.innerHTML = `Completed : ${document.querySelectorAll('.complete').length}`
   }
+
+  completeButton.addEventListener('click', compl)
+  //-------------------allNumber--------------------
+  const allNumber = () => {
+    let select = document.getElementById('Container');
+    all.innerHTML = `All : ${select.children.length}`
+
+  }
+  //----------------ShowCompleted----------------------
   const completec = () => {
     if (todoElement.classList.contains('complete')) {
 
@@ -97,39 +99,47 @@ function getTodo(text) {
       todoElement.classList.add('hide');
     }
   }
-  showCompleted.addEventListener('click', completec)
-  completeButton.addEventListener('click', compl)
 
+  showCompleted.addEventListener('click', completec)
+  //---------------------------------------------------
   const todoTextElement = document.createElement('div')
   todoTextElement.classList.add('todo-text')
-  todoTextElement.innerHTML = `<span>${text}</span>`
+  todoTextElement.innerHTML = `<span>${todoObject.text}</span>`
 
   const columnWrapper = document.createElement('div')
   columnWrapper.classList.add('column-wrapper')
 
   const todoDeleteButton = document.createElement('button')
   todoDeleteButton.classList.add('btn-todo-action', 'delete')
-  todoDeleteButton.innerText = 'X'
-  todoDeleteButton.addEventListener('click', () => todoElement.remove());
+  todoDeleteButton.innerText = '✖'
+  todoDeleteButton.addEventListener('click', () => {
+    todos.splice(index, 1);
+    todoElement.remove()
+  })
+  todoDeleteButton.addEventListener('click', allNumber)
+  todoDeleteButton.addEventListener('click', compl)
 
   const todoDatetimeBox = document.createElement('span')
   todoDatetimeBox.classList.add('column-wrapper-date')
-  todoDatetimeBox.innerText = (new Date()).toLocaleString()
+  todoDatetimeBox.innerText = todoObject.date
+
+  //---------------search---------------
 
   const search = () => {
     if (navTodoTextField.value === todoTextElement.textContent) {
       todoElement.classList.add('complete');
-      completeButton.innerText = 'v';
+      todoElement.classList.remove('star_clon');
+      completeButton.innerText = '✓';
     } else {
       todoElement.classList.remove('complete');
       completeButton.innerText = '';
+      todoElement.classList.add('star_clon');
       console.log(navTodoTextField.value, todoTextElement.value)
     }
   }
 
   navTodoTextField.addEventListener('keyup', search)
   navTodoTextField.addEventListener('keyup', compl)
-
 
   columnWrapper.append(todoDeleteButton, todoDatetimeBox)
 
@@ -142,26 +152,56 @@ function getTodo(text) {
 
 // ----------------- Render section -----------------
 
-bigWrapper.append(wrapperRow, nav, continerTodo)
+const items = JSON.parse(localStorage.getItem('items')) || [];
+console.log(items)
+
+window.onclick = (event) => {
+  console.log('click')
+  saveTodos(items);
+}
+
+const transformedTodos = items.map(getTodo)
+console.log('transformedTodos', transformedTodos);
+
+bigWrapper.append(wrapperRow, nav, ...transformedTodos)
 root.append(bigWrapper)
 
-const createTodo = () => {
+function saveTodos(todos) {
+  localStorage.setItem('items', JSON.stringify(todos))
+}
+
+const createTodo = (todos) => {
   const text = addTodoTextField.value;
-  bigWrapper.append(getTodo(text))
+  const item = {
+    text: text,
+    date: (new Date()).toLocaleString(),
+    isChecked: false,
+  }
+  let length = todos.push(item);
+  const todo = getTodo(item, length - 1, todos);
+  // localStorage.setItem('items', JSON.stringify(items))
+  bigWrapper.append(todo)
   addTodoTextField.value = '';
 }
 
-addTodoButton.addEventListener('click', createTodo)
+addTodoButton.addEventListener('click', () => createTodo(items))
+
+//--------------DeleteAll-----------------
 
 const deleteAll = () => {
   const todoItems = document.querySelectorAll('.todo-item')
   const alls = document.querySelectorAll('.complete')
   alls.forEach((item) => item.remove());
   todoItems.forEach((item) => item.remove());
+  items.splice(0, items.length);
+  // localStorage.removeItem('items')
   all.textContent = 'All:0'
   completed.textContent = 'Completed:0'
 }
+
 deleteAllButton.addEventListener('click', deleteAll)
+
+//----------------ShowAll----------------------
 
 function allshow() {
   const td = document.querySelectorAll('.todo-item')
@@ -170,18 +210,28 @@ function allshow() {
 
 showAll.addEventListener('click', allshow)
 
+//-------------------All-----------------------
 
 const allNumber = () => {
-  const todoItems = document.querySelectorAll('.todo-item')
-  for (i = 0; i <= todoItems.length; i++) {
-    console.log(i);
-    all.innerHTML = `<span>All:${i}<span>`
-  }
+  let select = document.getElementById('Container');
+  all.innerHTML = `All : ${select.children.length}`
+
 }
+
 addTodoButton.addEventListener('click', allNumber)
 
-function remove_country() {
+//----------------Delete Last------------------
+
+function remove() {
   let select = document.getElementById('Container');
   select.removeChild(select.lastChild);
+  items.splice(-1);
+  deleteLast.addEventListener('click', allNumber)
+  deleteLast.addEventListener('click', compl)
 }
-deleteLast.addEventListener('click', remove_country)
+
+deleteLast.addEventListener('click', remove)
+//-----------------Completed-------------------
+const compl = () => {
+  completed.innerHTML = `Completed : ${document.querySelectorAll('.complete').length}`
+}
